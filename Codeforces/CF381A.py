@@ -2,14 +2,6 @@ number = int(input())
 cards = list(map(int, input().split()))
 sereja = 0
 dima = 0
-"""
-for i in range(number):
-    if len(cards)!=0:
-        sereja += max(cards)
-        cards.remove(max(cards))
-        dima += max(cards)
-        cards.remove(max(cards))
-"""
 for i in range(number):
     if len(cards) != 0:
         if len(cards) == 0:
