@@ -1,3 +1,3 @@
 # ProblemSolving
-# My solved problems on codeforces and other sites
+# My solved problems on codeforces
 
