@@ -1,17 +1,7 @@
-x = str(input())
-y = str()
-
-for i in range(len(x)):
-    if x[i] != '+':
-        y = y + x[i]
-        
-y = list(map(int, y))
-
-y.sort()
-
-for i in range(len(y)):
-    if i == len(y)-1:
-        print(str(y[i]), end='')
-        break
-    else:
-        print(str(y[i]) + '+', end='')
+x = input(str())
+y = x.split('+')
+y = map(int, y)
+y = sorted(y)
+for i in range(len(y)-1):
+    print(str(y[i])+'+',end='')
+print(str(y[-1]))
