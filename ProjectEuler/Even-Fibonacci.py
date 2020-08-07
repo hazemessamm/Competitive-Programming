@@ -1,4 +1,6 @@
 
+
+#to store each value with it's corresponding result for later purposes.
 fib_recorder = dict()
 
 
