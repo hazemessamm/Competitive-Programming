@@ -1,0 +1,39 @@
+
+fib_recorder = dict()
+
+
+
+fib_recorder[1] = 1
+fib_recorder[2] = 1
+
+
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1 or n == 2:
+        return 1
+    else:
+        if n in fib_recorder:
+            return fib_recorder[n]
+        else:
+            fib_recorder[n] = fib(n-1) + fib(n-2)
+            return fib_recorder[n]
+
+
+
+
+final_sum = 0
+
+value = 1
+result = 0
+while result <= 4000000:
+    result = fib(value)
+    value += 1
+
+
+for key, value in fib_recorder.items():
+    if value % 2 == 0 and value <= 4000000:
+            final_sum += value
+
+print(final_sum)
+
