@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1609440837 source:e:\cpp\cf768a\main.cpp
+	<iostream>
+	<algorithm>
+	<vector>
+	<bits/stdc++.h>
+
